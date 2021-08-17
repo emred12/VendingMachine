@@ -1,0 +1,39 @@
+
+package vendingmachine;
+import java.util.Scanner;
+
+public class VendingMachine {
+static Scanner keyboard = new Scanner(System.in);
+//Ürünleri göstermek için method impementi
+public double displayChoices(){
+    double price = -1;
+    //eğer geçersiz bir ürün değeri girilir ise otomatın -1 döndürmesini istiyoruz
+    
+    System.out.println("You can look the snacks you want:");
+    System.out.println("A.          $1.55       Chocolate");
+    System.out.println("B.          $1.75       Fruit Juice");
+    System.out.println("C.          $2.00       Chips");
+    System.out.println("D.          $2.25       Oreo");
+    System.out.println("E.          $0.85       Crackers");
+    System.out.println();
+    System.out.println("what would you like to purchase?:");
+    String choice = keyboard.next();.toUpperCase();
+    //Satırın değil de sadece bir harfin girilmesini istediğimizden 
+     keyboard.next komutunu kullandım.
+    return price ;
+}
+    
+    public static void main(String[] args) {
+    System.out.println("welcome!");
+    System.out.println("Best snacks are here");
+    
+    System.out.print("how much money do you have ?:");
+    double cash = keyboard.nextDouble();
+    
+    }
+    
+}
+
+
+
+
